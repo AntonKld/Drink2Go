@@ -1,3 +1,4 @@
+/* eslint-disable */
 .filter {
   border: none;
   margin: 0;
@@ -81,43 +82,43 @@
   line-height: 24px;
 }
 
-.filter__secretive[type="radio"]:checked+.filter__marker-radio {
+.filter__secretive[type="radio"]:checked + .filter__marker-radio {
   outline: 2px solid $base-primary;
 }
 
-.filter__secretive[type="radio"]:checked+.filter__marker-radio::before {
+.filter__secretive[type="radio"]:checked + .filter__marker-radio::before {
   background-color: $base-primary;
 }
 
-.filter__secretive:hover:not(.filter__secretive:disabled):not(.filter__secretive:checked)+.filter__marker-radio,
-.filter__secretive:focus-visible+.filter__marker-radio {
+.filter__secretive:hover:not(:disabled):not(:checked) + .filter__marker-radio,
+.filter__secretive:focus-visible + .filter__marker-radio {
   outline: 2px solid $primary-lighter;
 }
 
-.filter__secretive:hover:not(.filter__secretive:disabled):not(.filter__secretive:checked)+.filter__marker-radio::before,
-.filter__secretive:focus-visible+.filter__marker-radio::before {
+.filter__secretive:hover:not(:disabled):not(:checked) + .filter__marker-radio::before,
+.filter__secretive:focus-visible + .filter__marker-radio::before {
   background-color: $primary-purpleblue;
 }
 
-.filter__secretive:disabled+.filter__marker-radio {
+.filter__secretive:disabled + .filter__marker-radio {
   background-color: transparent;
   outline: 2px solid $primary-grey;
 }
 
-.filter__secretive:disabled:checked+.filter__marker-radio {
+.filter__secretive:disabled:checked + .filter__marker-radio {
   background-color: transparent;
   outline: 2px solid $primary-grey;
 }
 
-.filter__secretive:disabled:checked+.filter__marker-radio::before {
+.filter__secretive:disabled:checked + .filter__marker-radio::before {
   background-color: $primary-grey;
 }
 
-.filter__secretive:disabled~.filter__text {
+.filter__secretive:disabled ~ .filter__text {
   color: $base-grey;
 }
 
-.filter__secretive:disabled:checked~.filter__text {
+.filter__secretive:disabled:checked ~ .filter__text {
   color: $base-grey;
 }
 
@@ -143,29 +144,29 @@
   border-radius: 50%;
 }
 
-.filter__secretive[type="checkbox"]:checked+.filter__marker-checkbox {
+.filter__secretive[type="checkbox"]:checked + .filter__marker-checkbox {
   background-color: $base-primary;
 }
 
-.filter__secretive[type="checkbox"]:checked+.filter__marker-checkbox::before {
+.filter__secretive[type="checkbox"]:checked + .filter__marker-checkbox::before {
   left: 20px;
 }
 
-.filter__secretive:hover:not(.filter__secretive:disabled):not(.filter__secretive:checked)+.filter__marker-checkbox,
-.filter__secretive:focus-visible+.filter__marker-checkbox {
+.filter__secretive:hover:not(:disabled):not(:checked) + .filter__marker-checkbox,
+.filter__secretive:focus-visible + .filter__marker-checkbox {
   background-color: $primary-purpleblue;
   outline: 2px solid $primary-lighter;
   outline-offset: -2px;
 }
 
-.filter__secretive:disabled+.filter__marker-checkbox {
+.filter__secretive:disabled + .filter__marker-checkbox {
   background-color: $primary-grey;
 }
 
-.filter__secretive:disabled:checked+.filter__marker-checkbox {
+.filter__secretive:disabled:checked + .filter__marker-checkbox {
   background-color: $primary-grey;
 }
 
-.filter__secretive:disabled:checked+.filter__marker-checkbox::before {
+.filter__secretive:disabled:checked + .filter__marker-checkbox::before {
   background-color: $base-grey;
 }

@@ -20,13 +20,13 @@
 .slider__item--white {
   background-color: $flat-white;
 
-    @media (min-width: $tablet-width) {
-      background: linear-gradient(180deg, $flat-white 77%, transparent 50%);
-    }
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(180deg, $flat-white 77%, transparent 50%);
+  }
 
-    @media (min-width: $desktop-width) {
-      background-color: $flat-white;
-    }
+  @media (min-width: $desktop-width) {
+    background-color: $flat-white;
+  }
 }
 
 .slider__item--violet {
@@ -186,9 +186,7 @@
   color: $base-primary;
   text-decoration: line-through;
   padding-right: 6px;
-}
 
-.slider__old-price {
   @media (min-width: $tablet-width) {
     padding-top: 4px;
   }
@@ -209,7 +207,6 @@
   border-radius: 4px;
   background-color: $base-primary;
   color: $base-white;
-
 }
 
 .slider__button:hover {
@@ -270,41 +267,41 @@
   @media (min-width: $desktop-width) {
     height: 100%;
   }
-
 }
-  .slider__arrow::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("/img/svg/arrow.svg");
-    background-repeat: no-repeat;
-    background-size: 21px;
-    background-position: center;
-    background-color: transparent;
-    z-index: 2;
-  }
 
-  .slider__arrow--right {
-    right: 0;
-    left: unset;
-    transform: rotate(180deg);
-  }
+.slider__arrow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 21px;
+  background-position: center;
+  background-color: transparent;
+  z-index: 2;
+}
 
-  .slider__arrow:hover,
-  .slider__arrow:focus {
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  }
+.slider__arrow--right {
+  right: 0;
+  left: unset;
+  transform: rotate(180deg);
+}
 
-  .slider__arrow:active {
-    background-image: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
-  }
+.slider__arrow:hover,
+.slider__arrow:focus {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
 
-  .slider__arrow:disabled::after {
-      background-image: url("/img/svg/arrow-grey.svg");
-  }
+.slider__arrow:active {
+  background-image: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+}
+
+.slider__arrow:disabled::after {
+  background-image: url("/img/svg/arrow-grey.svg");
+}
 
 .slider__bullets {
   @media (min-width: $desktop-width) {

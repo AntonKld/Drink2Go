@@ -44,27 +44,27 @@
   }
 }
 
-  .user-list__accaunt:focus-visible {
-    @media (min-width: $desktop-width) {
-      color: $base-primary;
-      outline: none;
-      fill: $base-primary;
-    }
+.user-list__accaunt:focus-visible {
+  @media (min-width: $desktop-width) {
+    color: $base-primary;
+    outline: none;
+    fill: $base-primary;
   }
+}
 
-  .user-list__accaunt:active {
-    background-color: $base-secondary;
+.user-list__accaunt:active {
+  background-color: $base-secondary;
+}
+
+.user-list__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-left: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
   }
-
-  .user-list__text {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      padding-left: 8px;
-      font-size: 12px;
-      line-height: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-    }
-  }
+}

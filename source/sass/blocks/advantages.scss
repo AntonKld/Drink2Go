@@ -17,13 +17,11 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
   color: $base-primary;
   text-transform: uppercase;
   margin: 0 0 4px;
-}
 
-.advantages__subtitle {
   @media (min-width: $desktop-width) {
     margin-bottom: 1px;
   }

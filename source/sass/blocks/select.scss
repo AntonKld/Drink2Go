@@ -20,7 +20,7 @@
       opacity: 1;
     }
 
-    .select__label+.select__input+.select__label {
+    .select__label + .select__input + .select__label {
       max-height: 40px;
       border-top-width: 1px;
     }
@@ -78,7 +78,7 @@
 .select__input {
   display: none;
 
-  &:checked+label {
+  &:checked + label {
     background: $base-primary;
     color: $base-white;
   }
