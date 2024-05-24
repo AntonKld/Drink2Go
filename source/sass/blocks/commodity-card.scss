@@ -1,0 +1,110 @@
+.commodity-card {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 349px 349px;
+    gap: 30px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 58px;
+    padding-bottom: 62px;
+  }
+}
+
+.commodity-card__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px 20px;
+  align-items: center;
+  background: $base-white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+    margin: 0;
+  }
+}
+
+.commodity-card__image {
+  display: block;
+  margin: 0 55px 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 80px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 63px 30px;
+  }
+}
+
+.commodity-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 4px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 10px;
+  }
+}
+
+.commodity-card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 19px;
+  }
+}
+
+.commodity-card__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.commodity-card__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  margin-right: 50px;
+}
+
+.commodity-card__button {
+  position: relative;
+  min-width: 141px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 20px 8px 40px;
+}
+
+.commodity-card__button::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url("../../img/icons/stack.svg#cards-basket");
+  background-repeat: no-repeat;
+  left: 19px;
+}

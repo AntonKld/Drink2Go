@@ -1,0 +1,121 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    column-gap: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    column-gap: 23px;
+  }
+}
+
+.pagination__item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: $base-white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination__item:hover {
+  background: $primary-lighter;
+}
+
+.pagination__item:focus {
+  background: $primary-lighter;
+}
+
+.pagination__item:active {
+  background: $primary-darker;
+}
+
+.pagination__item :disabled {
+  background: $primary-purpleblue;
+}
+
+.pagination__item:hover .pagination__link,
+.pagination__item:focus .pagination__link,
+.pagination__item:active .pagination__link {
+  color: $base-white;
+}
+
+.pagination__item:hover .arrow-left,
+.pagination__item:hover .arrow-right {
+  border-top: 2px solid $base-white;
+  border-right: 2px solid $base-white;
+}
+
+.pagination__item.pagination__link:disabled {
+  color: $base-black;
+}
+
+.pagination__link {
+  color: $base-primary;
+}
+
+.pagination__item--active>.pagination__link {
+  color: $base-black;
+}
+
+.pagination__item--active {
+  background: transparent;
+  font-weight: 700;
+  cursor: default;
+}
+
+.pagination__item--active:hover {
+  background: transparent;
+}
+
+.pagination__item--active:hover .pagination__link {
+  color: $base-black;
+}
+
+.arrow {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid $base-primary;
+  border-right: 2px solid $base-primary;
+  cursor: pointer;
+}
+
+.arrow-left {
+  transform: rotate(-135deg);
+}
+
+.arrow-right {
+  transform: rotate(45deg);
+}
+
+.arrow-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.back,
+.next {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: min-content;
+    padding: 8px;
+  }
+}

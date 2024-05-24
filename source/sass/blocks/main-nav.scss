@@ -1,0 +1,35 @@
+.main-nav__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__toggle {
+  min-width: 60px;
+  height: 60px;
+  padding: 0;
+  background-image: url("/img/svg/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $base-white;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  &--closed {
+    min-width: 60px;
+    height: 60px;
+    padding: 0;
+    background-image: url("/img/svg/the-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $base-white;
+    border: none;
+  }
+}

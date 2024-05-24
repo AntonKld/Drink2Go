@@ -1,0 +1,79 @@
+.sorting-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 23px;
+  }
+}
+
+.sorting-card__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sorting-card__text {
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 4px;
+}
+
+.sorting-card__select {
+  position: relative;
+  margin-left: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.sorting-card__values {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-primary;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  appearance: none;
+  height: 32px;
+  width: 165px;
+  background-image: url("/img/svg/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 87% 50%;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    background-position: 94% 50%;
+  }
+}
+
+.sorting-card__values:hover {
+  background-color: $base-secondary;
+}
+
+.sorting-card__values:focus {
+  background-color: $base-secondary;
+}
+
+.sorting-card__control {
+  font-family: $montserrat-regular;
+  color: $base-black;
+  font-size: 16px;
+  line-height: 24px;
+}

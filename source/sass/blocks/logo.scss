@@ -1,0 +1,35 @@
+.logo {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-right: 40px;
+  }
+}
+
+.logo__image {
+  display: flex;
+  align-items: center;
+  margin:3px 28px 0 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.logo__description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 126px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 5px;
+  }
+}
